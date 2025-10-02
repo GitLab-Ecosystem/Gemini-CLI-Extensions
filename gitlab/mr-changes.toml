@@ -1,0 +1,12 @@
+description = "Review file changes for a GitLab merge request."
+prompt = """
+User arguments: "{{args}}"
+1. Parse arguments as "<project_id> <merge_request_iid>".
+2. If either value is missing, request the user rerun the command with both identifiers.
+3. Call the `gitlab.get_merge_request_changes` tool with:
+   {
+     "project_id": "<project_id>",
+     "merge_request_iid": "<merge_request_iid>"
+   }
+4. Summarize the returned diff data: list changed files with additions/deletions and flag large or renamed files.
+"""

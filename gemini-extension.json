@@ -1,0 +1,19 @@
+{
+  "name": "gitlab",
+  "version": "0.1.0",
+  "description": "Connects Gemini CLI to the hosted GitLab MCP server for issues, merge requests, and pipeline insights.",
+  "mcpServers": {
+    "gitlab": {
+      "command": "npx",
+      "args": [
+        "--yes",
+        "mcp-remote",
+        "https://gitlab.com/api/v4/mcp",
+        "--static-oauth-client-metadata",
+        "{\"scope\": \"mcp\"}"
+      ],
+      "description": "Uses GitLab's hosted MCP server; you'll be prompted to authorize the CLI the first time it connects."
+    }
+  },
+  "contextFileName": "GEMINI.md"
+}
