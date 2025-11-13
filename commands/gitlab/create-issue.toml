@@ -1,14 +1,15 @@
-description = "Create a GitLab issue with title and optional description."
+description = "Create a GitLab issue with title and optional description and assignees."
 prompt = """
 User arguments: "{{args}}"
-1. Expect arguments formatted as "<project_id> | <title> | <description?>". Description is optional.
-2. Split on the first two pipe characters (`|`). Trim whitespace around each segment.
+1. Expect arguments formatted as "<project_id> | <title> | <description?> | <assignee_ids?>". Description and assignee_ids are optional.
+2. Split on pipe characters `|`. Trim whitespace around each segment.
 3. If project_id or title is missing, ask the user to rerun with the required fields.
 4. Call the `gitlab.create_issue` tool with:
    {
      "project_id": "<project_id>",
      "title": "<title>",
-     "description": "<description or empty string>"
+     "description": "<description or empty string>",
+     "assignee_ids": [<comma-separated IDs as integers>]  // Only if provided
    }
-5. Confirm creation by echoing the new issue IID, URL, and any default labels/assignees returned.
+5. Confirm creation by echoing the new issue IID, URL, and any assigned users/labels returned.
 """
