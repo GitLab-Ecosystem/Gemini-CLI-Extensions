@@ -1,8 +1,0 @@
-description = "Display the GitLab MCP server version and health."
-prompt = """
-User arguments: "{{args}}"
-1. Ignore any user arguments.
-2. Call the `gitlab.get_mcp_server_version` tool with an empty JSON object: {}.
-3. Report the returned version string and confirm connectivity.
-If the tool call fails, describe the error and suggest re-running after re-authenticating.
-"""
