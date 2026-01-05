@@ -37,7 +37,7 @@ Maps custom commands to MCP tools (defined in `commands/*.toml`):
 
 
 ## Distribution
-This repo follows the Gemini CLI [extension releasing](https://github.com/google-gemini/gemini-cli/blob/main/docs/extension-releasing.md) guidelines. The `gemini-extension.json` manifest lives at the repository root so users can install directly with `gemini extensions install benvenker/gitlab-gemini-extension` or by referencing specific branches/tags using `--ref`.
+This repo follows the Gemini CLI [extension releasing](https://github.com/google-gemini/gemini-cli/blob/main/docs/extensions/extension-releasing.md) guidelines. The `gemini-extension.json` manifest lives at the repository root so users can install directly with `gemini extensions install benvenker/gitlab-gemini-extension` or by referencing specific branches/tags using `--ref`.
 
 ## License
 Apache 2.0
