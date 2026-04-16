@@ -1,0 +1,8 @@
+description = "Code search using natural language."
+prompt = """
+User arguments: "{{args}}"
+1. Parse the arguments. You need the `project_id` and a `semantic_query`. A `directory_path` is optional.
+2. Ask the user for missing details if necessary.
+3. Call the `gitlab.semantic_code_search` tool.
+4. Summarize the most relevant code snippets returned by the semantic search, highlighting the confidence score and file context.
+"""

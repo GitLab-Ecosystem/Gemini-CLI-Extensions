@@ -1,0 +1,8 @@
+description = "Create a merge request in a GitLab project."
+prompt = """
+User arguments: "{{args}}"
+1. Parse the arguments to determine the project `id`, `title`, `source_branch`, and `target_branch`. 
+2. If any of the required attributes are missing, ask the user to provide them.
+3. Call the `gitlab.create_merge_request` tool with the parameters.
+4. Summarize the created merge request, providing the URL and its status.
+"""

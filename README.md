@@ -23,9 +23,13 @@ Maps custom commands to MCP tools (defined in `commands/*.toml`):
 - `/gitlab:issue <project> <iid>`
 - `/gitlab:create-issue <project> | <title> | [desc]`
 - `/gitlab:mr <project> <iid>`
-- `/gitlab:mr-changes`, `/gitlab:mr-commits`, `/gitlab:mr-pipelines`
-- `/gitlab:pipeline-jobs <project> <id>`
-- `/gitlab:search <scope> <query>`
+- `/gitlab:create-mr <project> | <title> | <source_branch> | <target_branch>`
+- `/gitlab:mr-changes`, `/gitlab:mr-commits`, `/gitlab:mr-pipelines`, `/gitlab:mr-conflicts`
+- `/gitlab:pipeline-jobs <project> <id>`, `/gitlab:manage-pipeline`
+- `/gitlab:create-note <work_item_url> <body>`, `/gitlab:workitem-notes <work_item_url>`
+- `/gitlab:saved-view-work-items <saved_view_id>`
+- `/gitlab:search <scope> <query>`, `/gitlab:semantic-search <project> <query>`
+- `/gitlab:search-labels <full_path> <is_project> [search]`
 - `/gitlab:server-version`
 
 ## Development

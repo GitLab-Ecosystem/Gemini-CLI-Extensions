@@ -1,4 +1,4 @@
-# GitLab MCP Extension
+# GitLab Gemini CLI Extension
 
 ## Quick Start
 1.  **Authorize**: First run spawns a browser for OAuth. Approve `mcp` scope.
@@ -7,12 +7,12 @@
 ## Commands
 Wrappers for GitLab MCP tools. If prompted, re-run with missing args.
 
-- **Issues/MRs**: `project_id` OR `namespace/project` + `IID`.
-    - `/gitlab:issue`, `/gitlab:mr`, `/gitlab:create-issue`
+- **Issues/MRs/Notes**: `project_id` OR `namespace/project` + `IID`.
+    - `/gitlab:issue`, `/gitlab:mr`, `/gitlab:create-issue`, `/gitlab:create-mr`, `/gitlab:create-note`, `/gitlab:workitem-notes`, `/gitlab:saved-view-work-items`
 - **Pipelines**: `project_id` + `pipeline_id`.
-    - `/gitlab:pipeline-jobs`
+    - `/gitlab:pipeline-jobs`, `/gitlab:manage-pipeline`
 - **Search**: `scope` + `query`.
-    - `/gitlab:search merge_requests "login fix"`
+    - `/gitlab:search merge_requests "login fix"`, `/gitlab:semantic-search`, `/gitlab:search-labels`
 
 ## Troubleshooting
 - **Auth Failures**: Re-run command to trigger new device flow. Clear tokens via `~/.gemini/settings.json` if needed.

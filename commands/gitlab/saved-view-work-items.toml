@@ -1,0 +1,8 @@
+description = "Fetch a saved view and its work items list from a namespace."
+prompt = """
+User arguments: "{{args}}"
+1. Parse the user arguments to extract the `saved_view_id`. Also capture the context (URL or project/group IDs).
+2. If `saved_view_id` is missing, prompt the user for it.
+3. Call the `gitlab.get_saved_view_work_items` tool.
+4. Summarize the items in the saved view.
+"""

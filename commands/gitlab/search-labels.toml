@@ -1,0 +1,8 @@
+description = "Search labels in a GitLab project or group."
+prompt = """
+User arguments: "{{args}}"
+1. Parse the arguments as "<full_path> <is_project> [search]".
+2. If `full_path` or `is_project` (true/false) are missing, ask the user to provide them.
+3. Call the `gitlab.search_labels` tool with the parameters.
+4. List the matching labels with their properties.
+"""

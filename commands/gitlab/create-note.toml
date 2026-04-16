@@ -1,0 +1,8 @@
+description = "Create a new note (comment) on a GitLab work item."
+prompt = """
+User arguments: "{{args}}"
+1. Parse the user arguments. You need at least the content for the `body`, and identifiers for the work item (either the `url` OR `project_id` and `work_item_iid`).
+2. If required values are missing, ask the user to provide them.
+3. Call the `gitlab.create_workitem_note` tool with the parameters.
+4. Summarize the confirmation that the note was created successfully.
+"""
