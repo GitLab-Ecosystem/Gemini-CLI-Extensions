@@ -8,7 +8,7 @@
 Wrappers for GitLab MCP tools. If prompted, re-run with missing args.
 
 - **Issues/MRs/Notes**: `project_id` OR `namespace/project` + `IID`.
-    - `/gitlab:issue`, `/gitlab:mr`, `/gitlab:create-issue`, `/gitlab:create-mr`, `/gitlab:create-note`, `/gitlab:workitem-notes`, `/gitlab:saved-view-work-items`
+    - `/gitlab:issue`, `/gitlab:mr`, `/gitlab:create-issue`, `/gitlab:create-mr`, `/gitlab:create-note`, `/gitlab:workitem-notes`
 - **Pipelines**: `project_id` + `pipeline_id`.
     - `/gitlab:pipeline-jobs`, `/gitlab:manage-pipeline`
 - **Search**: `scope` + `query`.

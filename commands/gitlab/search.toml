@@ -3,7 +3,7 @@ prompt = """
 User arguments: "{{args}}"
 1. Interpret the first token as `scope` (e.g., `issues`, `merge_requests`, `projects`). Treat the remainder as the query string (quotes optional but recommended for multi-word queries).
 2. If either scope or query is missing, ask the user to rerun the command (example: `/gitlab:search issues "runner is stuck"`).
-3. Call the `gitlab.gitlab_search` tool with:
+3. Call the `gitlab.search` tool with:
    {
      "scope": "<scope>",
      "search": "<query>"
